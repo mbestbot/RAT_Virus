@@ -26,3 +26,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             output = options(msg)
             if(msg == "exit"):
                 break  
+            conn.sendall(str.encode(output))
